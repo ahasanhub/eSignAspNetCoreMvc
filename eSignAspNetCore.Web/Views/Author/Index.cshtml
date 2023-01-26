@@ -1,0 +1,46 @@
+﻿@model Author
+
+<form method="post" asp-controller="Author" asp-action="save">
+    <table cellpadding="3" cellspacing="3">
+<tr>
+    <td>Name</td>
+    <td>
+        <input type="text" asp-for="Name" />
+    </td>
+</tr>
+        <tr>
+            <td>Email</td>
+            <td>
+                <input type="text" asp-for="Email" />
+            </td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>
+                <input type="text" asp-for="Address" />
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <section class="signature-component">
+                  <h2>Draw Signature</h2>
+                  <h2>with mouse or touch</h2>
+
+                  <canvas id="signature-pad" width="400" height="200"></canvas>
+
+                  <div>
+                    <input type="hidden" id="signature-data" asp-for="Signature" />
+                    <button id="save">Save</button>
+                    <button id="clear">Clear</button>
+                    <button id="showPointsToggle">Show points?</button>
+                  </div>  
+                </section>
+            </td>
+        </tr>
+        
+    </table>
+</form>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
+<script src="~/lib/signature/script.js"></script>

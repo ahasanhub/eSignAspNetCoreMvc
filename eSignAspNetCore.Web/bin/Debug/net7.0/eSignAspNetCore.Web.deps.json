@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "eSignAspNetCore.Web/1.0.0": {
+        "runtime": {
+          "eSignAspNetCore.Web.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "eSignAspNetCore.Web/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
